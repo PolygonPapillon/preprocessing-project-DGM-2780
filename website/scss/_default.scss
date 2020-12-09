@@ -4,13 +4,37 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%}
 /* apply a natural box layout model to all elements */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* body stlyings */
+/* ------------------------- mixins ------------------------- */
+@mixin imgFit {
+    figure {
+        max-width: 100%-$dblgutter;
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/* ---------------------- body stlyings ---------------------- */
 body {
     font-family: $defaultFont;
     font-weight: $normalWeight;
     font-size: 16px;
 }
-
+/* ------------------------- header ------------------------- */
+header {
+    
+    margin: 0 auto;
+    h1 {
+        color: $primaryColor;
+        text-align: center;
+    }
+    img {
+        
+        max-width: 24%;
+        
+    }
+}
 
 /* ------------------------- navigation ------------------------- */
 div#navWrapper {background-color: $secondaryColor; width: 100%;}
@@ -25,27 +49,30 @@ nav {
     ul li {
         float: left;
         width: 25%;
-        border-right: 1px solid rgba(0,0,0,0.3);
-        border-bottom: 1px solid rgba(0,0,0,0.3);
+       
+        
     }
-    ul li:last-child {border-right: 1px solid rgba(0,0,0,0.3);}
+    
     ul li a {
         display: block;
         text-align: center;
         font-weight: $boldWeight;
-        padding: .5rem 0;
+        padding: .6rem 0 .5rem 0;
         color: $primaryColor;
         text-decoration: none;
         transition: background 0.75s ease, color 0.75s ease;
+        border-bottom: 4px solid $secondaryColor;
     }
     
 
     ul li a:hover {
         color: $secondaryColor;
         background-color: $primaryColor;
+        border-bottom: $secondaryColor solid 4px;
     }
     ul li.active a  {
         background-color: darken($secondaryColor, 15%);
+        border-bottom: $primaryColor solid 4px;
     }    
     
     

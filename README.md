@@ -5,11 +5,12 @@ Project Requirements:
 1. Fork and clone this Github repository (Links to an external site.)
 
 2. Pick a website of your choosing to mimic the layout with your own code
+https://100beautymd.com/
 
 3. Pick a theme of your choosing to build:
 Bike Shop
 Bookstore
-Spa
+*Spa
 
 4. Website requirements
 Create a home page laid out and themed based on your choices from the above steps
@@ -25,7 +26,7 @@ Create and use 2 unique mixins of your choice
 Create a mixin that creates a custom button using parameters.  Apply these styles on the buttons you created in HTML for the home and services page
 Create a mobile version of the home and secondary pages using escaped variables.  You can simply stack your content on top of itself, nothing complex is expected
 
-[ ] Does your design match the theme (biking, spa, bookstore) you picked?
+[ ] Does your design match the theme (biking, **spa**, bookstore) you picked?
 
 [ ] Showcase your knowledge of variables by creating a font stack variable and 3 different color variables.
 
